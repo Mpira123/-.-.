@@ -1,0 +1,300 @@
+using System.IO;
+using System;
+class Program
+{
+static void Main()
+{
+case12();
+}
+static void case1()
+{
+int day = 6;
+switch (day)
+{
+case 1:
+Console.WriteLine("Понедельник");
+break;
+case 2:
+Console.WriteLine("Вторник");
+break;
+case 3:
+Console.WriteLine("Среда");
+break;
+case 4:
+Console.WriteLine("Четверг");
+break;
+case 5:
+Console.WriteLine("Пятница");
+break;
+case 6:
+Console.WriteLine("Суббота");
+break;
+case 7:
+Console.WriteLine("Воскресенье");
+break;
+}
+}
+static void case2()
+{
+int K = 4;
+switch (K)
+{
+case 1:
+Console.WriteLine("плохо");
+break;
+case 2:
+Console.WriteLine("неудовлетворительно");
+break;
+case 3:
+Console.WriteLine("удовлетворительно");
+break;
+case 4:
+Console.WriteLine("хорошо");
+break;
+case 5:
+Console.WriteLine("отлично");
+break;
+default:
+Console.WriteLine("ошибка!");
+break;
+}
+}
+static void case3()
+{
+int month = 12;
+switch (month)
+{
+case 12:
+case 1:
+case 2:
+Console.WriteLine("зима");
+break;
+case 3:
+case 4:
+case 5:
+Console.WriteLine("весна");
+break;
+case 6:
+case 7:
+case 8:
+Console.WriteLine("лето");
+break;
+case 9:
+case 10:
+case 11:
+Console.WriteLine("осень");
+break;
+}
+}
+static void case4()
+{
+int month = 5;
+switch (month)
+{
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+Console.WriteLine("31");
+break;
+case 2:
+Console.WriteLine("28");
+break;
+case 4:
+case 6:
+case 9:
+case 11:
+Console.WriteLine("30");
+break;
+}
+}
+static void case5()
+{
+int Act = 66;
+int a = 12;
+int b = 35;
+switch (Act)
+{
+case 1:
+Console.WriteLine("сложение");
+Console.WriteLine(a + b);
+break;
+case 2:
+Console.WriteLine("вычитание");
+Console.WriteLine(a - b);
+break;
+case 3:
+Console.WriteLine("умножение");
+Console.WriteLine(a / b);
+break;
+case 4:
+Console.WriteLine("деление");
+Console.WriteLine(a * b);
+break;
+}
+}
+static void case6()
+{
+int ves = 3;
+int l = 1;
+switch (ves)
+{
+case 1:
+Console.WriteLine("дециметр");
+Console.WriteLine(l/10);
+break;
+case 2:
+Console.WriteLine("километр");
+Console.WriteLine(l*1000);
+break;
+case 3:
+Console.WriteLine("метр");
+Console.WriteLine(l);
+break;
+case 4:
+Console.WriteLine("миллиметр");
+Console.WriteLine(l/1000);
+break;
+case 5:
+Console.WriteLine("сантиметр");
+Console.WriteLine(l / 100);
+break;
+}
+}
+static void case7()
+{
+int ves = 1;
+int m = 4;
+switch (ves)
+{
+case 1:
+Console.WriteLine("килограмм");
+Console.WriteLine(m);
+break;
+case 2:
+Console.WriteLine("миллиграмм");
+Console.WriteLine(m/1000000);
+break;
+case 3:
+Console.WriteLine("грамм");
+Console.WriteLine(m/1000);
+break;
+case 4:
+Console.WriteLine("тонна");
+Console.WriteLine(m*1000);
+break;
+case 5:
+Console.WriteLine("центнер");
+Console.WriteLine(m*100);
+break;
+}
+}
+static void case10()
+{
+char c = 'n';
+int cheslo = 1;
+switch (cheslo)
+{
+case 1:
+if (c == 'n')
+Console.WriteLine('w');
+else if (c == 'w')
+Console.WriteLine('s');
+else if (c == 's')
+else
+case 0:
+Console.WriteLine(c);
+break;
+case -1:
+if (c == 'n')
+Console.WriteLine('e');
+else if (c == 'e')
+Console.WriteLine('s');
+else if (c == 's')
+Console.WriteLine('w');
+else if (c == 'w')
+Console.WriteLine('n');
+break;
+}
+}
+static void case11()
+{
+char c = 'n';
+int cheslo2 = 2;
+int cheslo = 1;
+switch (cheslo)
+{
+case 1:
+if (c == 'n')
+Console.WriteLine('w');
+else if (c == 'w')
+Console.WriteLine('s');
+else if (c == 's')
+else
+case 2:
+if (c == 'n')
+Console.WriteLine('s');
+else if (c == 'e')
+Console.WriteLine('w');
+else if (c == 'w')
+Console.WriteLine('e');
+else if (c == 's')
+Console.WriteLine('n');
+break;
+case -1:
+if (c == 'n')
+Console.WriteLine('e');
+else if (c == 'e')
+Console.WriteLine('s');
+else if (c == 's')
+Console.WriteLine('w');
+else if (c == 'w')
+Console.WriteLine('n');
+break;
+}
+switch (cheslo2)
+{
+case 1:
+if (c == 'n')
+Console.WriteLine('w');
+Console.WriteLine('e');
+Console.WriteLine('n');
+break;
+Console.WriteLine('e');
+Console.WriteLine('n');
+break;
+}
+static void case12()
+{
+int elem = 1;
+int r=4;
+int d=6;
+int l=2;
+int s=7;
+switch (elem)
+{
+case 1:
+Console.WriteLine(2 * r);
+Console.WriteLine(2 * r* Math.PI);
+Console.WriteLine(Math.PI * r * r);
+break;
+case 2:
+Console.WriteLine(d / 2);
+Console.WriteLine(2 * Math.PI * d / 2);
+Console.WriteLine(d / 2 * d / 2 * Math.PI);
+break;
+case 3:
+Console.WriteLine(l / 2 * Math.PI);
+Console.WriteLine(l / 2 * Math.PI * 2);
+Console.WriteLine(l / 2 * Math.PI * l / 2 * Math.PI * Math.PI);
+break;
+case 4:
+Console.WriteLine(Math.Sqrt(s / Math.PI));
+Console.WriteLine(2 * Math.Sqrt(s / Math.PI));
+Console.WriteLine(Math.PI * Math.Sqrt(s / Math.PI * 2));
+break;
+}
+}

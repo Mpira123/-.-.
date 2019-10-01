@@ -1,0 +1,184 @@
+using System.IO;
+using System;
+class Program
+{
+static void Main(string[] args)
+{
+start24();
+}
+static void start1()
+{
+int L = 190;
+int N = L / 100;
+Console.WriteLine(N);
+}
+static void start2()
+{
+int M = 40;
+int B = M / 1000;
+Console.WriteLine(B);
+}
+static void start3()
+{
+int B = 7859;
+int C = 1024;
+int T = B / C;
+Console.WriteLine(T);
+}
+static void start4()
+{
+int A = 15;
+int B = 4;
+int C = A / B;
+Console.WriteLine(C);
+}
+static void start5()
+{
+int A = 7;
+int B = 5;
+int R = A / B;
+int C = A % B;
+Console.WriteLine(C);
+Console.WriteLine(R);
+}
+static void start6()
+{
+int A = 43;
+int C = A % 10;
+int B = A / 10;
+Console.WriteLine(C);
+Console.WriteLine(B);
+}
+static void start7()
+{
+int A = 34;
+int C = (A % 10 + A / 10);
+int B = (A % 10 * A / 10);
+Console.WriteLine(C);
+Console.WriteLine(B);
+}
+static void start8()
+{
+int A = 45;
+int c = (A/10)+(A%10)*10;
+Console.WriteLine(c);
+}
+static void start9()
+{
+int A = 346;
+int C = A / 100;
+Console.WriteLine(C);
+}
+static void start10()
+{
+int A = 679;
+int v = A%10;
+int C = (A%100)/10;
+Console.WriteLine(C);
+Console.WriteLine(v);
+}
+static void start11()
+{
+int A = 934;
+int C = (A % 10) % 10;
+int B = A % 10;
+int D = A / 10;
+int V = C + B + D;
+int M = C * B * D;
+Console.WriteLine(V);
+Console.WriteLine(M);
+}
+static void start12()
+{
+int A = 987;
+int B = A%10*100+(A%100)/10*10+A/100;
+Console.WriteLine(B);
+}
+static void start13()
+{
+int A = 876;
+int B = (A % 10) % 10;
+int C = A / 100;
+int D = A / 10;
+int R = D % 10;
+int V = 100 * R + 10 * B + C;
+Console.WriteLine(V);
+}
+static void start14()
+{
+int A = 456;
+int V = (A%100)/10*100+A%10*10+A/100;
+Console.WriteLine(V);
+}
+static void start15()
+{
+int A = 353;
+int V = A/100*10+ (A%100)/10*100+A%10;
+Console.WriteLine(V);
+}
+static void start16()
+{
+int A = 982;
+int B = (A % 10) % 10;
+int C = A / 100;
+int D = A / 10;
+int R = D % 10;
+int V = 100 * C + 10 * B + R;
+Console.WriteLine(V);
+}
+static void start17()
+{
+}
+static void start18()
+{
+int A = 8345;
+int B = A / 1000;
+int C = B % 10;
+Console.WriteLine(C);
+}
+static void start19()
+{
+int N = 45;
+int A = 86400;
+int E = 60;
+int C = (A - N) / E;
+Console.WriteLine(C);
+}
+static void start20()
+{
+int N = 21;
+int A = 86400;
+int E = 60;
+int V = 60;
+int C = (A - N) / E / V;
+Console.WriteLine(C);
+}
+static void start21()
+{
+int N = 57;
+int A = 60;
+int C = A - N;
+Console.WriteLine(C);
+}
+static void start22()
+{
+int N = 78;
+int A = 1200;
+int C = A - N;
+Console.WriteLine(C);
+}
+static void start23()
+{
+int N = 12;
+int A = 3600;
+int E = 60;
+int C = (A - N) / E;
+Console.WriteLine(C);
+}
+static void start24()
+{
+int A = 200;
+int B = A % 7;
+Console.WriteLine(B);
+}
+}
