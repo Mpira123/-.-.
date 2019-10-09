@@ -1,0 +1,141 @@
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       Series6();
+    }
+    static void Series1()
+   {
+   int sum = 0;
+   int[] a = new int[10];
+       Random random = new Random();
+    for (int i = 0; i < a.Length; i++)
+       a[i] = random.Next(10);
+    for (int i = 0; i < a.Length; i++)
+        Console.Write(a[i] + " ");
+        Console.WriteLine();
+    for(int i = 0 ; i < a.Length; i++)
+        sum += a [i];
+        Console.WriteLine(sum);
+    }
+    static void Series2()
+    {
+    int sum = 1;
+    int[] a = new int[10];
+       Random random = new Random();
+    for (int i = 0; i < a.Length; i++)
+       a[i] = random.Next(10);
+    for (int i = 0; i < a.Length; i++)
+        Console.Write(a[i] + " ");
+        Console.WriteLine();
+    for(int i = 0 ; i < a.Length; i++)
+        sum *= a [i];
+        Console.WriteLine(sum);   
+    }
+    static void Series3()
+    {
+    int sum = 0;
+    int[] a = new int[10];
+        Random random = new Random();
+    for (int i = 0; i < a.Length; i++)
+        a[i] = random.Next(10);
+    for (int i = 0; i < a.Length; i++)
+        Console.Write(a[i] + " ");
+        Console.WriteLine();
+    for(int i = 0 ; i < a.Length; i++)
+        sum += a [i];
+        sum = sum / 10;
+        Console.WriteLine(sum);
+    }
+    static void Series4()
+        {
+        int N = 34;
+        int sum1 = 0;
+        int product = 1;
+        int[] a = new int[N];
+        Random random = new Random();
+        for (int i = 0; i < a.Length; i++)
+        { 
+            a[i] = random.Next(1, 10);
+            sum1 += a[i];
+            product *= a[i];
+        }
+        Console.WriteLine(product);
+        Console.WriteLine(sum1);
+    }
+    static void Series5()
+    {
+    int sum = 0, integer;
+        double[] A = new double[10] { 1, 2, 3, 4.2, 5, 6, 7, 8, 9.1, 0.22 };
+        for (int i = 0; i < A.Length; i++)
+        {
+        integer = Convert.ToInt32(A[i]);
+        sum += integer;
+        Console.Write(integer + " ");
+        }
+        Console.WriteLine();
+        Console.WriteLine(sum);
+        }
+    static void Series6()
+        {
+        double sum = 0, remainder;
+        double[] A = new double[10] { 1, 2, 3, 4.2, 5, 6, 7, 8, 9.1, 0.22 };
+        for (int i = 0; i < A.Length; i++)
+        {
+            remainder = A[i] % 1;
+            sum += remainder;
+            Console.Write(remainder + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine(sum);
+        }
+       static void Series7()
+        {
+            int N = 7;
+            double[] A = new double [N];
+            Output.WriteLine(A);
+            Console.WriteLine();
+            foreach(int x in A)
+            {
+                Console.Write(Convert.ToInt32(x)+" ");
+            }
+        }
+        static void Series8()
+        {
+            int N = 7, K = 0;
+            int[] A = new int [N];
+            Output.WriteLine(A);
+            Console.WriteLine();
+            foreach (int c in A)
+            {
+                if (c % 2 == 0)
+                {
+                    Console.Write(c + " ");
+                    K++;
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine(K);
+        }
+        static void Series9()
+        {
+            int N = 7, K = 0;
+            int[] A = new int [N];
+            Output.WriteLine(A);
+            Console.WriteLine();
+            foreach (int c in A)
+            {
+                if (c % 2 == 1)
+                {
+                    Console.Write(c + " ");
+                    K++;
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine(K);
+        }}  
+  
+    
