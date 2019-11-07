@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApplication13
+{
+class Fraction
+{
+    struct Fraction_
+    {
+        public int Numerator;
+        public int Denominator;
+ 
+        public Fraction()
+        {
+            Numerator = 0;
+            Denominator = 1;
+        }
+ 
+        public static Fraction Create(int num, int Denom)
+        {
+            if (Denom != 0)
+                return new Fraction(num, Denoom);
+            else return default(Fraction);
+        }
+        public static Fraction operator +(Fraction first, Fraction second)
+        {
+            Fraction resilt = new Fraction();
+            
+            return resilt;
+        }
+        public static Fraction operator -(Fraction first, Fraction second)
+        {
+            Fraction resilt = new Fraction();
+            
+            return resilt;
+        }
+        public static Fraction operator *(Fraction first, Fraction second)
+        {
+            Fraction resilt = new Fraction();
+            resilt.Numerator = first.Numerator * second.Numerator;
+            resilt.Denominator = first.Denominator * second.Denominator;
+            return resilt;
+        }
+        public static Fraction operator /(Fraction first,Fraction second)
+        {
+            Fraction resilt = new Fraction();
+            resilt.Numerator = first.Numerator * second.Denominator;
+            resilt.Denominator = first.Denominator * second.Numerator;
+            return resilt;
+        }
+ 
+ 
+ 
+    }
+}    
+}
