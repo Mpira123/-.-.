@@ -13,12 +13,6 @@ class Fraction
         public int Numerator;
         public int Denominator;
  
-        public Fraction()
-        {
-            Numerator = 0;
-            Denominator = 1;
-        }
- 
         public static Fraction Create(int num, int Denom)
         {
             if (Denom != 0)
