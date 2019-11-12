@@ -45,9 +45,6 @@ class Fraction
             resilt.Denominator = first.Denominator * second.Numerator;
             return resilt;
         }
- 
- 
- 
     }
 }    
 }
